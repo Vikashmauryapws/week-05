@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+</head>
+<style>
+    .container{
+        top: 10px;
+        display: inline-block;
+        position: relative;
+
+    }
+    span{
+        position: fixed;
+        z-index: 2;
+        background: #e13a3a;
+        cursor: pointer;
+        padding: 10px 25px;
+    }
+    .menu{
+        width: 200px;
+        position: absolute;
+        background: #f5f2f2;
+        overflow-y: scroll;
+        display: none;
+        max-height: 150px;
+    }
+  
+     .container:hover .menu{
+        display: block;
+    }
+    .option{
+       padding: 10px;
+        color: #000;
+    }
+    .option:hover{
+        background: #f5dddd;
+    }
+</style>
+<body>
+  <div class="container">
+    <span>hover to show option</span>
+ 
+    <div class="menu">
+        <div class="option" href="">Option- 1</div>
+        <div class="option" href="">Option- 2</div>
+        <div class="option" href="">Option- 3</div>
+        <div class="option" href="">Option- 4</div>
+        <div class="option" href="">Option- 5</div>
+        <div class="option" href="">Option- 6</div>
+        <div class="option" href="">Option- 7</div>
+        <div class="option" href="">Option- 8</div>
+        <div class="option" href="">Option- 9</div>
+       
+    </div>
+</div>
+</body>
+</html>

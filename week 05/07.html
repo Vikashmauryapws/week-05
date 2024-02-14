@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+</head>
+<style>
+    .main{
+        position: relative;
+        
+    }
+.main > h1{
+    text-align: center;
+}
+
+
+.items{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.card-1{
+    background-color: aqua;
+}
+.card-2{
+    margin-top: 80px;
+    background-color: rgb(36, 216, 108);
+    margin-left: 40px;
+}
+.card-3{
+    background-color: rgb(210, 185, 26);
+    margin-top: 150px;
+    margin-left: 70px;
+}
+.items>img{
+    width: 150px;
+    height: 200px;
+    background: #1f1f1f;
+}
+.items:hover{
+    z-index: 10;
+}
+
+
+</style>
+<body>
+    <div class="main">
+        <h1>Hover to Unveil The Pokemon</h1>
+        <div class="container">
+            <div class="items card-1">
+                <h1>Card 1</h1>
+                <img src="pikachu-5527377_640.jpg" alt="">
+            </div>
+            <div class="items card-2">
+                <h1>Card 2</h1>
+                <img src="pikachu-5527377_640.jpg" alt="">
+            </div>
+            <div class="items card-3">
+                <h1>Card 3</h1>
+                <img src="pikachu-5527377_640.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
